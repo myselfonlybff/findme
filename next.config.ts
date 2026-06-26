@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Conserve uniquement l'export statique
+  output: 'export',
+  // Ajoute ces deux lignes pour que GitHub Pages charge les scripts au bon endroit :
+  basePath: '/findme',
+  assetPrefix: '/findme/',
   images: {
     unoptimized: true,
   },
