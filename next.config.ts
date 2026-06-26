@@ -1,8 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  basePath: '/findme',
-  assetPrefix: '/findme/',
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: 'export', // Conserve uniquement l'export statique
   images: {
     unoptimized: true,
   },
